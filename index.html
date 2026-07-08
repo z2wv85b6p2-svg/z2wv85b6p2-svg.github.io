@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .sticky-contact { position: sticky; top: 0; z-index: 1000; backdrop-filter: blur(10px); }
+        .fade-in { animation: fadeIn 1.5s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+        .hover-lift:hover { transform: translateY(-5px); transition: 0.3s; }
+    </style>
+</head>
+<body class="bg-black text-white font-sans">
+
+    <!-- Sticky Contact Header -->
+    <nav class="sticky-contact bg-black/80 p-4 border-b border-gray-800 flex justify-center gap-6 text-sm uppercase tracking-widest">
+        <a href="https://teams.live.com/l/invite/FEAkVokGPtWQCD27w?v=g1" class="text-purple-400 hover:text-white">Teams</a>
+        <a href="https://wa.me/15818096580" class="text-green-400 hover:text-white">WhatsApp</a>
+        <a href="zangi://?phone=1043576829" class="text-orange-400 hover:text-white">Zangi</a>
+        <a href="sgnl://signal.me/#p/+15818096580" class="text-blue-400 hover:text-white">Signal</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="min-h-screen flex flex-col items-center justify-center text-center p-6 fade-in">
+        <h1 class="text-6xl font-black mb-6">CRAIG VASSEUR</h1>
+        <p class="text-xl text-gray-400 max-w-xl">Managing global assets with precision. Direct access for qualified partners.</p>
+    </header>
+
+    <!-- Partnership Tiers -->
+    <section class="py-20 px-6 max-w-4xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-12">How You Can Join</h2>
+        <div class="space-y-6">
+            <a href="details.html" class="block p-8 border border-gray-800 hover:border-blue-500 hover-lift transition-all">
+                <h3 class="text-2xl font-bold text-blue-500">Starter Partner</h3>
+                <p class="text-gray-400">Entry-level participation for emerging stakeholders.</p>
+            </a>
+            <a href="details.html" class="block p-8 border border-gray-800 hover:border-blue-500 hover-lift transition-all">
+                <h3 class="text-2xl font-bold text-blue-500">Growth Partner</h3>
+                <p class="text-gray-400">Higher yield allocations with direct project updates.</p>
+            </a>
+            <a href="details.html" class="block p-8 border border-gray-800 hover:border-blue-500 hover-lift transition-all">
+                <h3 class="text-2xl font-bold text-blue-500">Lead Partner</h3>
+                <p class="text-gray-400">Full institutional parity and voting rights.</p>
+            </a>
+        </div>
+    </section>
+</body>
+</html>
